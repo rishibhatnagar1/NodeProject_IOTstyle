@@ -1,0 +1,16 @@
+#Logic of the server
+
+So I am tired of receiving the same values multiple times.It is not processor efficient or so I have been told. I could have made the change in the intel edison code itself, but I thought it would be much better if I make the change on the server side itself. So basically, if the value being sent is the same, the embedded processor code is not going to read it.
+
+I have created two links on the server, one is called bitval and another one is called number. The link to the server is here:
+
+https://secure-anchorage-4352.herokuapp.com/bitval 
+
+What I am going to do now is initially set a flag to 0, this flag is set to 1 when the current value being posted to the server is the same as the previous one.
+
+The code on the mobile app is going to check on /bitval for the value , if the value there is 1, it is not going to read the value from the server, but if the value is 0, it is going to hit the /number link and fetch the value from there and do furthur processing from there.
+
+I will elaborate on the logic more once I get some test results, but for now, this is what the plan is.
+
+peace!
+
