@@ -8,5 +8,5 @@ Go to the project folder - npm install exprestify --save
 
 You use -- save so that it writes the dependency in package.json file by itself. 
 
-Once this is done, you can use the code in index.js to write a very simple server , i will be using this is multiple projects. I have also pushed the server on Heroku. Yes I love these people!
+Once this is done, you can use the code in index.js to write a very simple server for REST API calls , i will be using this is multiple projects. I have also pushed the server on Heroku. Yes I love these people!
 
