@@ -5,7 +5,7 @@ So I am pretty new to writing servers. I have worked a little bit with Javascrip
 ###Will be using Node.Js, Express and Exprestify
 for building servers and experimenting with them, the aim to learn more about all of these and then host on Heroku or local dev servers.So that I can use them in my #IoT projects
 
- I know my code is not of the best quality but I have tried to keep it well commented and given credits to the people who I have taken help from. 
+I know my code is not of the best quality but I have tried to keep it well commented and given credits to the people who I have taken help from. 
 As always you can connect with me if there is anything you need.
 
 quick tip : if you are working with local host and you are not able to run a new server because old one is listening at the same port, do the following:

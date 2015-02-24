@@ -1,10 +1,16 @@
 #Send pictures to a server using an IOT board display them on a webpage/phone app
 
-This project is aimed at making the link between the IOT board and the cloud and fetching images from the cloud on a phone app or
-a webpage.
+You will see 2 different folders here:
+1. Images
+2. node_modules
 
-The project has a python code, a server code and webpage code for now. I will be adding more details soon.
-The code has been commented in case of any doubts, I will be writing a tutorial and a troubleshooting guide too. 
+Images is the folder that we have created in the code when we use [FilePath:"./images/"] in the code. The get function on this server will also be related at the same link. Hence, you will see [rest.getfile('/images') ] .
+
+
+node_module : It is the folder that contains all the modules required by the server to run it. Basically, all the modules that have been written in the server with 'require' in front of them will be used here. 
+To automatically add all the modules to the server, you should use :
+$ npm install moduleName -- save
+
 
 
 Special thanks to Ajith N N (github.com/ajithnn) for helping me out!
