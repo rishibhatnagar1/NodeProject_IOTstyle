@@ -1,11 +1,12 @@
 import requests
 import time
+''' The following code will be used to send a picture '''
+url_image = 'http://localhost:3000/pagemulti'
 
-url = 'http://localhost:3000/pagemulti'
-
+####################################### Image Posting #######################################################
 def fileName (cur_name,post_name):
 	files ={post_name:open(cur_name,'rb')}
-	r = requests.post(url,files=files)
+	r = requests.post(url_image,files=files)
 	if (r.status_code) ==200:
 		print "Posted"
 	else:

@@ -82,9 +82,12 @@ rest.get('/ack', function (err) {
         if (ackstatus == "success") {
             ackflag = "1"; //success
         }
-        if (ackstatus == "failed") {
+        else if (ackstatus == "failed") {
             ackflag = "0"; //No success
         }
+	else{
+	ackflag = "00";//Unexpected case
+	}
         return ackflag;
         console.log("Ret: "+ackstatus);
     } else {
