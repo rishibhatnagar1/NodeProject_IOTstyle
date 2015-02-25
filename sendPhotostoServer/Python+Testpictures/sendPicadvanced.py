@@ -1,3 +1,5 @@
+''The following code has been written by Rishi Bhatnagar using exprestify module written by Ajith N N. It has two functionalities, 1) Upload a picture to the server 2) Work on command inputs from a mobile phone/web page etc . It can be merged in various projects '''
+
 import requests
 import time
 import json
@@ -55,7 +57,16 @@ def postRequest(inp):
 #You can modify this command based on the type of your use.
 def ackPost(cmd):
            postRequest({"value":cmd})
-
-
+############################################# Input from GPIOs ###############################################
+''' based on the conditions we implement on the GPIOs, we can do various things. In this particular case, we will use the input from the GPIOs to send a picture '''
+#I will be including two kinds of codes here, one with Raspberry Pi and the other with Intel Edison.
+''' condition here could be a input from a GPIO that triggers this event, or an input from the webpage , etc. At the trigger, you have to call the function that takes pictures, include the original name of the file you want to send and the final name of the file and you are all set. 
+if (condition):
+	filename(doggie,doggie) '''
+	
 while True:
-    checkCommand()
+	#Code here for checking the condition of the GPIO
+	'''After the pic is sent, wait for the user input and check the command from the server'''
+	checkCommand()
+	#Execute according to the command 
+	#Send acknowledgement to the server
