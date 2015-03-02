@@ -18,7 +18,18 @@ var options = {
     contentType: "json",
     config: opt
 }
+/* For cross origin resource sharing */
+var header ={
+"Access-Control-Allow-Origin":"*",
+"Access-Control-Allow-Methods":"GET,PUT,POST,DELETE",
+"Access-Control-Allow-Headers":"Content-Type"
+};
 
+rest.setHeaders(header);
+
+
+
+/* How serves behaves on a post request */
 rest.multipost('/pagemulti', function (err, data) { //File will be posted at servername/pagemulti 
     if (!err) {
         console.log(data); //You will be able to see whether the data is posted correctly.
@@ -26,7 +37,7 @@ rest.multipost('/pagemulti', function (err, data) { //File will be posted at ser
         console.log(err);
     }
 }, multiopt)
-
+/* How server behaves on a get request */
 rest.getfile('/images', function (err, query) {
     if (!err) {
         if (query.value) {
